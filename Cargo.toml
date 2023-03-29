@@ -5,8 +5,10 @@ edition = "2021"
 authors = ["Benjamin Levin <bplevin36@gmail.com>"]
 categories = ["api-bindings", "text-processing"]
 description = "Rust bindings for the libxdiff C library"
-license = "LGPL"
+repository = "https://github.com/bplevin36/libxdiff-rs"
+homepage = "https://github.com/bplevin36/libxdiff-rs"
+license = "LGPL-3.0-only"
 
 [dependencies]
 libc = "0.2.139"
-libxdiff-sys = { path = "libxdiff-sys", version = "0.1.0" }
+libxdiff-sys = "0.1.0"
