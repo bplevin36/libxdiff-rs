@@ -1,7 +1,8 @@
 //! # libxdiff bindings for Rust
 //!
 //! This library contains bindings to the [libxdiff][1] C library. Currently,
-//! only a limited subset of the library's functionality is provided.
+//! only a limited subset of the library's functionality is provided with safe
+//! Rust.  The rest is available under [`libxdiff_sys`].
 //!
 //! [1]: http://www.xmailserver.org/xdiff-lib.html
 
@@ -47,7 +48,7 @@ unsafe fn init() {
 static INITIALIZED: AtomicBool = AtomicBool::new(false);
 
 /// Safely ensure libxdiff has been initialized before proceeding.
-/// This is called automatically when `MMFile`s are created. From
+/// This is called automatically when [`MMFile`]s are created. From
 /// that point on, the existence of the object means the library has been
 /// initialized already.
 pub fn ensure_init() {
