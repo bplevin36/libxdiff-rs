@@ -1,5 +1,5 @@
 # libxdiff
-Safe, idiomatic Rust bindings for the `libxdiff` C library.
+Safe, idiomatic Rust bindings for the [`libxdiff`](http://www.xmailserver.org/xdiff-lib.html) C library.
 
 [![Crates.io](https://img.shields.io/crates/v/libxdiff)](https://crates.io/crates/libxdiff)
 [![docs](https://docs.rs/libxdiff/badge.svg)](https://docs.rs/libxdiff)
