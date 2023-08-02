@@ -20,10 +20,10 @@ use libxdiff::MMFile;
 let mut f1 = MMFile::from_bytes(b"hello world\n");
 let mut f2 = MMFile::from_bytes(b"hello world!\n");
 let mut diff_lines = Vec::<String>::new();
-    f1.diff_raw(&mut f2, |line: &[u8]| {
-        diff_lines.push(from_utf8(line).unwrap().to_owned());
-    })
-    .unwrap();
+f1.diff_raw(&mut f2, |line: &[u8]| {
+    diff_lines.push(from_utf8(line).unwrap().to_owned());
+})
+.unwrap();
 assert_eq!(
     diff_lines,
     vec![
